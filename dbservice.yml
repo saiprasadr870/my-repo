@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: demodb
+  labels:
+    app: demodb
+spec:
+  containers:
+  - name: demodb
+    image: visualpath/vpromultidb
+    ports:
+    - name: demodb-port
+      containerPort: 3306
+
+    env:
+     - name: MYSQL_ROOT_PASSWORD
+       value: "demodbpass"
