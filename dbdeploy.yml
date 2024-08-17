@@ -19,7 +19,7 @@ spec:
         image: imranvisualpath/8amysql-db_1:V1
         ports:
         - name: demodb-port
-          containerPort: 3306
+          containerPort: 3304
         env:
          - name: MYSQL_ROOT_PASSWORD
            value: "demodbpass"
